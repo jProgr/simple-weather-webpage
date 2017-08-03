@@ -36,7 +36,7 @@ app.post('/', (req, res) =>
       let weather_data = JSON.parse(body);
       if(weather_data.main == undefined)
       {
-        res.render('index', { weather: null, error: 'An error ocurred 2' });
+        res.render('index', { weather: null, error: 'An error ocurred' });
       }
       else
       {
